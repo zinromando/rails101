@@ -25,7 +25,6 @@ end
     else
       render :new
     end
-  end
 
   def update
       if @group.update(group_params)
@@ -52,7 +51,6 @@ end
   def group_params
     params.require(:group).permit(:title, :description)
   end
-end
 
      def group_params
        params.require(:group).permit(:title, :description)
