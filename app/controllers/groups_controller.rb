@@ -6,10 +6,6 @@ class GroupsController < ApplicationController
     @groups = Group.all
   end
 
-  def index
-      @groups = current_user.participated_groups
-    end
-
   def new
     @group = Group.new
   end
